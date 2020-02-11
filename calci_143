@@ -1,0 +1,50 @@
+import java.util.Scanner;
+class SimleCalculator{
+  public static void main(String[] args) {
+
+    Scanner input = new Scanner(System.in);
+
+    int firstNumber;
+    int secondNumber;
+    int c;
+
+    System.out.println("Write a number");
+    firstNumber = Integer.parseInt(input.nextLine());
+
+    System.out.println("Write another number");
+    secondNumber = Integer.parseInt(input.nextLine());
+    System.out.println("write operation");
+    c=Integer.parseInt(input.nextLine());
+    switch(c) {
+        
+    
+
+    case 1: Addition(firstNumber, secondNumber);
+            break;
+    case 2:Substratcion(firstNumber, secondNumber);
+            break;
+    case 3: Multiplication(firstNumber, secondNumber);
+            break;
+    case 4: division(firstNumber,secondNumber);
+            break;
+    }
+  }
+
+    static void Addition( int firstNumber, int secondNumber ) {
+        System.out.println("Addition = " + (firstNumber + secondNumber));
+    }
+
+
+    static void Substratcion( int firstNumber, int secondNumber ) {
+        System.out.println("Substratcion = " + (firstNumber - secondNumber));
+    }
+
+
+    static void Multiplication( int firstNumber, int secondNumber ) {
+        System.out.println("Multiplication = " + (firstNumber * secondNumber));
+    }
+    static void division( int firstNumber, int secondNumber) {
+        System.out.println("Division= "+(firstNumber / secondNumber));
+    }
+
+
